@@ -25,7 +25,7 @@ public class CustomerController {
 	public String listCustomers(Model theModel) {
 		List<Customer> theCustomers = customerService.getCustomers();
 		theModel.addAttribute("customers", theCustomers);
-		return "list-customers";
+		return "list-customers";//view-name
 	}
 	
 	@GetMapping("/showForm")
